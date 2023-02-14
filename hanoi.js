@@ -119,7 +119,10 @@ for (let i = nbDisques; i >= 1; i--) {
 
 let B = []
 let C = []
+
 tourHanoi(nbDisques, 'A', 'C', 'B')
+console.table(B)
+console.table(C)
 
 let mustTurn = nbrTour(nbDisques)
 console.log(`Le nombre de tour nécessaire pour ${nbDisques} est de ${mustTurn}`)
