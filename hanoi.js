@@ -110,20 +110,18 @@ function tourHanoi(n, depart, arrivee, intermediaire) {
     console.log('Pile A : ' + A.length + ', Pile B : ' + B.length + ', Pile C : ' + C.length)
     tourHanoi(n - 1, intermediaire, arrivee, depart)
   }
-} // Initialiser les piles A, B, C avec le nombre de disques spécifié
+} 
+// Initialiser les piles A, B, C avec le nombre de disques spécifié
 let A = []
-
 for (let i = nbDisques; i >= 1; i--) {
         A.push(i)
     }
-
 let B = []
 let C = []
 
 tourHanoi(nbDisques, 'A', 'C', 'B')
-console.table(B)
-console.table(C)
 
 let mustTurn = nbrTour(nbDisques)
 console.log(`Le nombre de tour nécessaire pour ${nbDisques} est de ${mustTurn}`)
 
+// function for Hanoi Tower 
