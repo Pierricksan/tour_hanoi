@@ -21,76 +21,6 @@ sortir un rapport des log du git.
 
 */
 
-/* 
-
-demander le nomre de pallets 
-3 pilliers A = nombre de pallet B = 0  C = 0 
-
-variables : 
-- nombre de tours qui va s'incrémenter   N
-- nombre de pallet / prompt = Z  
-- A : premier pillier décrémenter à chaque tour
-
-
-position initiale 
-
-Nombre de pallets = 3 
-
-N = nombre de tours 
-deux conditions de fin : 
- - pillier A = 0 
- - pillier C = Nombre de pallets 
-
-
-tant que A != 0 && C != Z 
-
-
-condition pour les boucles les piliers ne doivent pas être supérieur au nombre de palets 
-Z > B ou C 
-
-pour Z = 3 
-A = nombre de pallets = Z = 3  
-B = 0 
-C = 0 
-
-N + 1 
-A = 2 (-1) décrémenter 
-B = 0 
-C = 1 (+1) incrémenter 
-
-N + 2 
-A = 1 (-1) décrementer 
-B = 1 (+1) incrémenter 
-C = 1 (+1) incrémenter 
-
-N + 3 
-A = 1 
-B = 2 (+1) incrémenter
-C = 0 (-1) décrementer
-
-N + 4
-A = 0 (-1) décrémenter
-B = 2 
-C = 1 (+1) incrémenter
-
-N + 5 
-A = 1 (+1) incrémenter
-B = 1 (-1) décrémenter
-C = 1 
-
-N + 6 
-A = 1 
-B = 0 (-1) décrementer
-C = 2 (+1) incrémenter
-
-N + 7
-A = 0 (-1) décrementer 
-B = 0 
-C = 3 (+1) incrémenter
-
-A = 0 && C = 3 = Z  
-
-*/
 let nbDisques = prompt('Entrez le nombre de disques :')
 let tour = 0;
 
@@ -141,5 +71,3 @@ console.log(`
 Le nombre de tour nécessaire pour ${nbDisques} disques est de ${mustTurn}
 
 `)
-
-// function for Hanoi Tower 
